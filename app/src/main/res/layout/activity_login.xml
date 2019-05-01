@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="238dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Giriş Yap"
+        android:textColor="#FFF"
+        android:textSize="33sp" />
+
+    <TextView
+        android:id="@+id/txtSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLogin"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Hesabınıza giriş yapın"
+        android:textColor="#60FFFFFF"
+        tools:ignore="NegativeMargin" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtSignin"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/edit_text_line"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:hint="T.C. Kimlik Numarası"
+        android:textSize="13sp"
+        android:textColorHint="#60FFFFFF"
+        android:textCursorDrawable="@color/cursorColor"
+        android:textColor="#60FFFFFF"
+        tools:ignore="LabelFor,NegativeMargin,UnusedAttribute"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_alignStart="@+id/txtSignin"
+        android:layout_alignEnd="@+id/txtEmail"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/edit_text_line"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:hint="Şifreniz"
+        android:textColorHint="#60FFFFFF"
+        android:textCursorDrawable="@color/cursorColor"
+        android:textColor="#60FFFFFF"
+        android:textSize="13sp"
+        tools:ignore="LabelFor,NegativeMargin,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="336dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/txtPassword"
+        android:layout_alignStart="@+id/txtPassword"
+        android:layout_alignEnd="@+id/txtPassword"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/login_color"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Giriş Yap"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="336dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignStart="@+id/btnLogin"
+        android:layout_alignEnd="@+id/btnLogin"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="-71dp"
+        android:background="@android:color/transparent"
+        android:text="Üye ol"
+        android:textAllCaps="false"
+        android:textColor="#60FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="NegativeMargin" />
+
+    <CheckBox
+        android:id="@+id/checkShowHidden"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignStart="@+id/txtPassword"
+        android:layout_alignTop="@+id/txtPassword"
+        android:layout_alignEnd="@+id/txtPassword"
+        android:layout_marginStart="297dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="2dp"
+        android:button="@drawable/eye_outline"
+        tools:ignore="NegativeMargin" />
+
+
+
+    <Button
+        android:id="@+id/btnSavePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnSignUp"
+        android:layout_alignEnd="@+id/btnSignUp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:text="Şifrenizi mı unuttunuz?"
+        android:textAllCaps="false"
+        android:textColor="#60FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="NegativeMargin" />
+</RelativeLayout>
