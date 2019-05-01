@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".EditProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="null">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_close"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txtEditProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/close"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Profili Düzenle"
+                    android:textColor="#60FFFFFF"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/txtSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kaydet"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="#60FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="RelativeOverlap,RtlHardcoded" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/edit_text_line"
+            android:ems="10"
+            android:text="İsim"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#60FFFFFF"
+            android:textSize="13sp"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <EditText
+            android:id="@+id/txtBirthday"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_text_line"
+            android:ems="10"
+            android:padding="10dp"
+            android:text="Doğum Tarihi"
+            android:layout_gravity="center"
+            android:textColor="#60FFFFFF"
+            android:textSize="13sp"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_text_line"
+            android:ems="10"
+            android:padding="10dp"
+            android:text="Email"
+            android:layout_gravity="center"
+            android:textColor="#60FFFFFF"
+            android:textSize="13sp"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+    </LinearLayout>
+
+</LinearLayout>
