@@ -65,7 +65,7 @@
         android:ems="10"
         android:importantForAutofill="no"
         android:padding="10dp"
-        android:hint="Adı Soyadı"
+        android:hint="Ad Soyad"
         android:textColor="#60FFFFFF"
         android:textColorHint="#60FFFFFF"
         android:textCursorDrawable="@color/cursorColor"
